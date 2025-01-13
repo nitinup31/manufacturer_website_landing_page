@@ -1,0 +1,1281 @@
+/* Navbar Animation */
+.nav-link {
+    
+     color: #09034f;
+     text-align: left;
+    
+  }
+  
+  .nav-link:hover {
+ 
+    color: #ff5733; 
+  }
+  
+  
+.animated-navbar {
+    transform: translateY(-100%);
+    animation: slideDown 1s ease-out forwards;
+    font: 1em sans-serif;
+    font-size:large;
+    font-weight:900;
+    color: rgb(4, 4, 97);
+  }
+  
+  @keyframes slideDown {
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Hero Slider */
+  .hero-slider {
+    position: relative;
+    width: 100%;
+    height: 680px;
+    overflow: hidden;
+  }
+  
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transform: translateY(10px);
+    animation: slideAnimation 18s infinite;
+  }
+  
+  .slide:nth-child(1) {
+    animation-delay: 0s;
+  }
+  
+  .slide:nth-child(2) {
+    animation-delay: 6s;
+  }
+  
+  .slide:nth-child(3) {
+    animation-delay: 12s;
+  }
+  
+  @keyframes slideAnimation {
+    0%, 25% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    33%, 100% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  }
+  
+  
+  /* Adjust the layout for contact form and content */
+  .slide .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .text-md-start {
+    margin-right: auto; /* Ensure content stays on the left */
+    text-align: left;
+    /* Makes text more readable on dark backgrounds */
+  }
+  
+  .contact-form {
+    margin-left: auto; /* Ensures the form stays on the right */
+    max-width: 700px;
+    margin-top: 50px; 
+    background-color: rgb(2, 29, 136);
+    color: black;
+  }
+  /* Style for buttons */
+.btn {
+    background-color: #ff5733; 
+    color: white; 
+    border: none;
+    font-weight: bold; 
+  }
+  
+  .btn:hover {
+    background-color: white; 
+    color: #ff5733; 
+  }
+  
+  
+  /* Overlay for background images */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: 1;
+  }
+  
+  /* Content Styling */
+  .slide-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 5%;
+    position: relative;
+    z-index: 2; /* Ensure content is above the overlay */
+  }
+  
+  .contact-form {
+    max-width: 400px;
+    z-index: 2;
+  }
+  
+  .text-md-start {
+    max-width: 600px;
+    color: #fff;
+    text-align: left;
+    z-index: 1;
+  }
+  
+  .contact-form {
+    max-width: 500px;
+    padding: 10px;
+    background-color:rgba(255, 255, 255, 0.525);
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+  }
+
+  .contact-form .form-control,
+  .contact-form textarea {
+    font-size: 1em; 
+    padding: 10px 12px; 
+    border-radius: 4px;
+    border: 1px solid #ccc; /* Subtle border */
+  }
+  .contact-form .form-control:focus,
+.contact-form textarea:focus {
+  border-color: #ff5733; /* Highlighted border on focus */
+  box-shadow: 0 0 5px rgba(255, 87, 51, 0.5);
+}
+.contact-form .form-label {
+    font-size: 1.1em; /* Slightly larger labels */
+    margin-bottom: 8px; /* Space between label and input */
+  }
+
+  .contact-form .btn {
+    font-size: 1.2em;
+    padding: 10px;
+    font-weight: bold;
+    background-color: #ff5733;
+    border: none;
+  }
+  .contact-form .btn:hover {
+    background-color: white;
+    color: #ff5733;
+  }
+
+  .contact-form h3 {
+    font-size: 1.8em;
+    margin-bottom: 25px;
+    text-align: center; /* Center the heading */
+  }
+/* Ensures form stays below content on smaller screens */
+@media (max-width: 768px) {
+    .contact-form {
+      width: 80%; 
+      max-width: 400px; 
+      margin: 25px auto; 
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 8px; 
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for a cleaner look */
+    }
+  
+    .slide-content {
+      flex-direction: column; /* Stack the content and form vertically */
+      align-items: left; /* Center align for better layout */
+      text-align: left; /* Center the text for smaller screens */
+    }
+  
+    .text-md-start {
+      max-width: 100%; /* Allow the text to use full width */
+      margin-bottom: 0px; /* Add spacing between content and form */
+    }
+  
+    .contact-form h3 {
+      font-size: 1.5em; /* Adjust heading size */
+      margin-bottom: 0px; /* Spacing under the heading */
+    }
+  
+    .contact-form .form-control,
+    .contact-form textarea {
+      font-size: .8em; /* Adjust font size */
+      padding: 2px; /* Compact padding */
+    }
+  
+    .contact-form textarea {
+      height: 10px; /* Reduce textarea height */
+    }
+  
+    .contact-form button {
+      font-size: 1em; /* Reduce button font size */
+      padding: 10px; /* Adjust button padding */
+    }
+    .contact-form .row {
+    display: flex;
+    flex-direction: column; /* Stack fields vertically by default */
+    gap: 10px; /* Add spacing between rows */
+  }
+
+  /* Specific arrangement for Name in its own row */
+  .contact-form .row:nth-child(1) {
+    flex-direction: row; /* Name takes full width in its own row */
+  }
+
+  /* Number and Email side by side */
+  .contact-form .row:nth-child(2) {
+    flex-direction: row; /* Align email and phone horizontally */
+    gap: 10px; /* Add space between email and phone */
+  }
+
+  /* Ensure Number and Email split space evenly */
+  .contact-form .row:nth-child(2) .col-md-6 {
+    flex: 1; /* Make both fields equal in width */
+  }
+
+  /* Message in its own row */
+  .contact-form .row:nth-child(3) {
+    flex-direction: row; /* Message takes full width in its own row */
+  }
+
+  }
+  
+  
+  
+
+  /* Client Logo Section */
+.client-logo-section {
+    background-color: #f8f9fa;
+  }
+  
+  .client-logo-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .logo-slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .logo-track {
+    display: flex;
+    align-items: center;
+    animation: scrollLogo 15s linear infinite;
+    will-change: transform;
+  }
+  
+  .logo {
+    flex: 0 0 auto;
+    width: 150px; /* Fixed logo size */
+    margin: 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; 
+    aspect-ratio: 1; 
+    padding: 5px; 
+    border-radius: 5px; 
+    background-color: #fff; 
+  }
+  
+  /* Keyframes for Infinite Scroll */
+  @keyframes scrollLogo {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .logo {
+      width: 100px; /* Smaller logos for mobile */
+      margin: 0 10px;
+    }
+  }
+  
+
+  /* About Us Section */
+.about-us-section {
+    background-color: #f8f9fa;
+    overflow: hidden;
+  }
+  
+  .about-image {
+    animation: slideInLeft 1s ease-in-out;
+  }
+  
+  .about-info {
+    animation: slideInRight 1s ease-in-out;
+  }
+  
+  .about-info h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .about-info p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .about-info .btn {
+    background-color:  #ff5733;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .about-info .btn:hover {
+    background-color: white;
+    color:  #ff5733;;
+  }
+  
+  /* Animations */
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about-us-section {
+      text-align: center;
+    }
+  
+    .about-image, .about-info {
+      animation: fadeIn 1s ease-in-out;
+    }
+  
+    .about-image img {
+      width: 100%;
+    }
+  
+    .about-info h2 {
+      font-size: 2rem;
+    }
+  
+    .about-info p {
+      font-size: 0.9rem;
+    }
+  
+    .about-info .btn {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Fade-in for small screens */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  /* General Product Section Styling */
+.product-section {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Product Card Styling */
+  .product-card-custom {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .product-card-custom:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Image Hover Animation */
+  .product-image-custom {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .product-image-custom img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+  }
+  
+  .product-image-custom:hover img {
+    transform: scale(1.1) rotate(2deg); /* Zoom and slight rotation */
+  }
+  
+  .product-image-custom .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 234, 255, 0.7); /* Attractive blue overlay */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .product-image-custom:hover .image-overlay {
+    opacity: 1;
+  }
+  .product-image-custom .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 234, 255, 0.7); /* Attractive blue overlay */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .product-image-custom:hover .image-overlay {
+    opacity: 1;
+  }
+  /* Content Animation */
+  .product-content-custom {
+    padding: 20px;
+    text-align: center;
+    animation: slideIn 0.5s ease-out;
+  }
+  
+  .product-content-custom h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .product-content-custom:hover h3 {
+    color: #080808;
+   
+  }
+  
+  .product-content-custom p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+  }
+  
+  .product-content-custom:hover p {
+    transform: translateY(-5px); 
+    color: #111112;
+  }
+  
+  .product-content-custom button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #ff5733; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .product-content-custom button:hover {
+    background-color: white; 
+    transform: scale(1.1); 
+  }
+  
+  /* Animation Keyframes */
+  @keyframes slideIn {
+    from {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .product-card-custom {
+      margin-bottom: 20px;
+    }
+  }
+
+
+
+   /* Overlay for Content Section */
+   .product-content-custom {
+    position: relative;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.9);
+    transition: all 0.3s ease;
+    overflow: hidden;
+  }
+
+  .product-content-custom .content-overlay {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.253); /* Semi-transparent black */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+  }
+
+  .product-content-custom:hover .content-overlay {
+    opacity: 1;
+  }
+
+  .product-content-custom * {
+    position: relative;
+    z-index: 2;
+  }
+
+
+
+
+
+
+
+  
+ /* testimonial-section */
+.custom-testimonial-slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  margin: 100px 0;
+}
+
+.custom-testimonial-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.custom-testimonial-card {
+  flex: 0 0 32.1%; /* Display 3 testimonials in a row */
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  margin: 5px;
+  position: relative;
+  overflow: hidden; /* Hide overflow of the wave effect */
+  opacity: 0; /* Initially hidden */
+  animation: fadeIn 1s ease-in-out forwards; /* Apply fade-in animation */
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px); /* Slide in from below */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* End at the normal position */
+  }
+}
+
+/* Hover effects with water wave flow */
+.custom-testimonial-card:hover {
+  border-bottom: 2px solid #0c0c0c;
+  border-top: 2px solid #1a1918;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+/* Image styling */
+.custom-author-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  margin-bottom: 10px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.custom-testimonial-card:hover .custom-author-image {
+  transform: scale(1.2); /* Zoom effect */
+}
+
+/* Water wave effect */
+.custom-testimonial-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-size: 400% 400%; /* Larger gradient size to simulate wave motion */
+  z-index: -1; /* Place the background behind the content */
+  transform: scale(1.5); /* Make sure it's large enough to cover the whole card */
+  opacity: 0.4; /* Slight transparency to create a subtle effect */
+  transition: all 1.5s ease-in-out; /* Smooth wave movement */
+}
+
+.custom-testimonial-card:hover::before {
+  background-position: 100% 100%; /* Shift gradient on hover to simulate flowing water */
+}
+
+/* Carousel controls */
+.custom-carousel-control-prev-icon,
+.custom-carousel-control-next-icon {
+  background-color: #0b0b0b;
+}
+
+@media (max-width: 768px) {
+  .custom-testimonial-card {
+    flex: 0 0 85.5%; /* Full width for each card on smaller screens */
+  }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-control-prev {
+  left: -0px; /* Adjust as needed */
+}
+
+.carousel-control-next {
+  right: -0px; /* Adjust as needed */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 15px;
+  height: 15px;
+  background-size: contain;
+}
+
+
+
+
+
+
+/* Counter Section */
+.counter-section {
+  background: linear-gradient(135deg, #f0f4f7, #d9e4ec);
+  padding: 60px 0;
+}
+
+.counter-section .section-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  color: #333;
+}
+
+/* Counter Boxes */
+.counter-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.counter-box {
+  position: relative;
+  background-color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.counter-box:hover {
+  transform: translateY(-10px);
+}
+
+.counter-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(120deg, #ff63476a, rgba(0, 255, 255, 0.689), #ff63476a, rgba(0, 255, 255, 0.689));
+  background-size: 400% 400%;
+  animation: wave-animation 3s infinite linear;
+  z-index: -1;
+}
+
+/* Counter Numbers */
+.counter-number {
+  font-size: 40px;
+  font-weight: 700;
+  color: #333;
+  margin: 10px 0;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.5s ease;
+}
+
+.counter-icon {
+  font-size: 30px;
+  
+  margin-right: 5px;
+}
+.counter-icon:hover {
+  font-size: 30px;
+  color: #ff6347;
+  margin-right: 5px;
+}
+
+.counter-value {
+  font-size: 40px;
+  font-weight: 700;
+  margin-left: 5px;
+}
+
+.counter-box:hover .counter-number {
+  color:#ff6347 
+}
+
+.counter-content p {
+  font-size: 20px;
+  color: black;
+}
+
+/* Wave Animation */
+@keyframes wave-animation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  
+    .counter-card {
+      flex: 0 0 50%; /* Take up 50% width for two per row */
+      max-width: 50%; /* Ensure the maximum width is 50% */
+      margin-bottom: 20px; /* Add some spacing */
+    }
+    
+  
+
+  .counter-section .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 576px) {
+  .counter-card {
+    padding: 20px;
+  }
+}
+/* Icon Styling */
+.counter-icon-box {
+  font-size: 30px;
+  color: #ff6347;
+  margin-bottom: 15px;
+  animation: icon-pulse 2s infinite;
+}
+
+@keyframes icon-pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+}
+
+
+.faq {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.toggle-faq {
+  background: #ff6347;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 30px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.toggle-faq:hover {
+  background: #ff6347;
+}
+
+.faq-answer {
+  padding: 20px;
+  background: #f8f9fa;
+  border-left: 3px solid #ff6347;
+  border-radius: 5px;
+  margin-top: 10px;
+  display: none;
+}
+
+.faq-answer p {
+  margin: 0;
+}
+/* Contact Form Styling */
+.animated-form {
+  background-color: rgba(27, 26, 26, 0.2);
+  color: black;
+  font-size: large;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+  animation: slideIn 1s ease;
+}
+
+.animated-form .form-group {
+  margin-bottom: 15px;
+}
+
+.animated-form .form-control {
+  background: white;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 5px;
+  border-radius: 5px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.animated-form .form-control:focus {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.05);
+}
+
+
+
+
+/* FAQ and Contact Form Animation */
+@keyframes slideIn {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .faq-contact-section .faq,
+  .faq-contact-section .contact-form {
+    margin-bottom: 20px;
+  }
+}
+/* Footer Styling */
+.footer-section {
+  position: relative;
+  padding: 60px 20px;
+  color: #fff;
+  background-color: #0d1117;
+  overflow: hidden;
+}
+
+.footer-logo img {
+  width: 120px;
+  margin-bottom: 15px;
+}
+
+.footer-about {
+  font-size: 14px;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.footer-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav li {
+  margin-bottom: 10px;
+  font-weight: 900;
+}
+
+.footer-nav li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-nav li a:hover {
+  color: #ff5733;
+}
+
+.footer-social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 20px;
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.footer-social-icons a:hover {
+  transform: scale(1.2);
+  color: #ff5733;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 10px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+
+/* Footer Section */
+.footer-section {
+  position: relative;
+  background-color: #222;
+  color: #fff;
+  padding: 50px 0;
+  overflow: hidden;
+}
+
+/* Background Bubble Styling */
+.footer-bubble-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* Ensures bubbles are behind content */
+  overflow: hidden;
+  pointer-events: none; /* Prevent interaction with bubbles */
+}
+
+.footer-bubble-background .bubble {
+  position: absolute;
+  bottom: -100px;
+  background: #ff6347;
+  border-radius: 50%;
+  animation: bubbleAnimation 20s infinite ease-in-out;
+  opacity: 0.5;
+}
+
+/* Bubble Sizes */
+.footer-bubble-background .bubble:nth-child(1) {
+  width: 50px;
+  height: 50px;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.footer-bubble-background .bubble:nth-child(2) {
+  width: 70px;
+  height: 70px;
+  left: 25%;
+  animation-delay: 4s;
+}
+
+.footer-bubble-background .bubble:nth-child(3) {
+  width: 100px;
+  height: 100px;
+  left: 40%;
+  animation-delay: 8s;
+}
+
+.footer-bubble-background .bubble:nth-child(4) {
+  width: 80px;
+  height: 80px;
+  left: 60%;
+  animation-delay: 2s;
+}
+
+.footer-bubble-background .bubble:nth-child(5) {
+  width: 120px;
+  height: 120px;
+  left: 75%;
+  animation-delay: 6s;
+}
+
+.footer-bubble-background .bubble:nth-child(6) {
+  width: 60px;
+  height: 60px;
+  left: 90%;
+  animation-delay: 10s;
+}
+
+.footer-bubble-background .bubble:nth-child(7) {
+  width: 30px;
+  height: 30px;
+  left: 5%;
+  animation-delay: 12s;
+}
+
+.footer-bubble-background .bubble:nth-child(8) {
+  width: 40px;
+  height: 40px;
+  left: 50%;
+  animation-delay: 14s;
+}
+
+.footer-bubble-background .bubble:nth-child(9) {
+  width: 20px;
+  height: 20px;
+  left: 80%;
+  animation-delay: 16s;
+}
+
+/* Bubble Animation */
+@keyframes bubbleAnimation {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-50vh) scale(1.2);
+  }
+  100% {
+    transform: translateY(-100vh) scale(0.8);
+  }
+}
+
+/* Footer Content */
+.footer-section .container {
+  position: relative;
+  z-index: 1; /* Ensures content is above bubbles */
+}
+
+.footer-logo img {
+  max-width: 150px;
+}
+
+.footer-about {
+  font-size: 0.9em;
+  color: #ccc;
+  margin-top: 10px;
+}
+
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-nav ul li {
+  margin-bottom: 10px;
+}
+
+.footer-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+.footer-nav ul li a:hover {
+  color: #ff5733;
+}
+
+.footer-social-icons a {
+  color: #fff;
+  font-size: 1.2em;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.footer-social-icons a:hover {
+  color: #ff5733;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #aaa;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-section .row {
+    text-align: center;
+  }
+
+  .footer-nav,
+  .footer-social-icons {
+    justify-content: center;
+  }
+
+  .footer-social-icons a {
+    margin-right: 15px;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+  }
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1000;
+}
+
+.whatsapp-button a img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-button a img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .whatsapp-button {
+    bottom: 10px;
+    left: 10px;
+  }
+
+  .whatsapp-button a img {
+    width: 40px;
+    height: 40px;
+  }
+}
+/* .telephone-button */
+
+.telephone-button{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+
+}
+.telephone-button a img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.telephone-button  a img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .telephone-button  {
+    bottom: 60px;
+    left: 10px;
+  }
+
+  .telephone-button  a img {
+    width: 40px;
+    height: 40px;
+  }
+}
+

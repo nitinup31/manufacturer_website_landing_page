@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing-Webpage4</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome for Social Media Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section>
+    <nav class="navbar navbar-expand-lg bg-light navbar-light animated-navbar">
+        <div class="container-fluid">
+          <!-- Logo -->
+          <a class="navbar-brand" href="#">
+            <img src="images/logo.png" alt="Logo" width="120" height="70" style="margin-left: 70px;">
+          </a>
+          <!-- Toggler for Mobile View -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Navbar Content -->
+          <div class="collapse navbar-collapse justify-content-end w-100" id="navbarNav">
+            <!-- Nav Links -->
+            <ul class="navbar-nav align-items-center me-3" style="color: black;">
+              <li class="nav-item">
+                <a class="nav-link active" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#faq">Contact</a>
+              </li>
+            </ul>
+            <!-- CTA Button -->
+            <a href="#faq" class="btn btn-primary">Get Started</a>
+          </div>
+        </div>
+      </nav>
+      </section>
+      
+      
+      <section>
+  <!-- Hero Slider -->
+  <div class="hero-slider" id="home">
+    <!-- Slide 1 -->
+    <div class="slide" style="background-image: url('images/bg1.jpg');">
+      <div class="overlay"></div> <!-- Overlay added here -->
+      <div class="slide-content">
+        <div class="text-md-start">
+          <h1>Welcome to Our Platform</h1>
+          <p>Explore our services and connect with us to get the best solutions tailored for your needs. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi repudiandae aut quis eaque ad reprehenderit, ratione, laudantium asperiores deleniti reiciendis id maiores alias ex illo modi qui nostrum. Voluptates, odio.</p>
+          <a href="#" class="btn btn-success me-2">Learn More</a>
+          <a href="#" class="btn btn-outline-primary">Get Started</a>
+        </div>
+        <div class="contact-form p-4 rounded shadow">
+            <h3 style="text-align: left;">Contact Us</h3>
+            <form>
+              <div class="row mb-3">
+                <div class="col-12">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" class="form-control form-control-lg" id="name" placeholder="Your Name">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control form-control-lg" id="email" placeholder="Your Email">
+                </div>
+                <div class="col-md-6">
+                  <label for="phone" class="form-label">Phone Number</label>
+                  <input type="tel" class="form-control form-control-lg" id="phone" placeholder="Your Phone Number">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-12">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-control form-control-lg" id="message" rows="4" placeholder="Your Message"></textarea>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg w-100">Submit</button>
+            </form>
+          </div>
+          
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide" style="background-image: url('images/bg2.jpg');">
+      <div class="overlay"></div> <!-- Overlay added here -->
+      <div class="slide-content">
+        <div class="text-md-start">
+          <h1>Explore New Horizons</h1>
+          <p>Our solutions are designed to transform your business. Discover what we can do for you. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem in dolor recusandae dolore hic earum ratione quibusdam fuga. Suscipit laboriosam nihil similique eos saepe quae ducimus nam veniam laborum tempora.</p>
+          <a href="#" class="btn btn-success me-2">Learn More</a>
+          <a href="#" class="btn btn-outline-primary">Contact Us</a>
+        </div>
+        <div class="contact-form p-4 rounded shadow">
+            <h3 style="text-align: left;">Contact Us </h3>
+            <form>
+              <div class="row mb-3">
+                <div class="col-12">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" class="form-control form-control-lg" id="name" placeholder="Your Name">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control form-control-lg" id="email" placeholder="Your Email">
+                </div>
+                <div class="col-md-6">
+                  <label for="phone" class="form-label">Phone Number</label>
+                  <input type="tel" class="form-control form-control-lg" id="phone" placeholder="Your Phone Number">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-12">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-control form-control-lg" id="message" rows="4" placeholder="Your Message"></textarea>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg w-100">Submit</button>
+            </form>
+          </div>
+          
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide" style="background-image: url('images/bg3.jpg');">
+      <div class="overlay"></div> <!-- Overlay added here -->
+      <div class="slide-content">
+        <div class="text-md-start">
+          <h1>Join Us Today</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti qui doloremque culpa neque porro dolor illo nesciunt soluta fugiat error similique corrupti accusantium consequatur, praesentium ullam aliquid autem repudiandae at.</p>
+          <a href="#" class="btn btn-success me-2">Sign Up</a>
+          <a href="#" class="btn btn-outline-primary">Contact Us</a>
+        </div>
+        <div class="contact-form p-4 rounded shadow">
+            <h3 style="text-align: left;">Contact Us</h3>
+            <form>
+              <div class="row mb-4">
+                <div class="col-12">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" class="form-control form-control-lg" id="name" placeholder="Your Name">
+                </div>
+              </div>
+              <div class="row mb-4">
+                <div class="col-md-6">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control form-control-lg" id="email" placeholder="Your Email">
+                </div>
+                <div class="col-md-6">
+                  <label for="phone" class="form-label">Phone Number</label>
+                  <input type="tel" class="form-control form-control-lg" id="phone" placeholder="Your Phone Number">
+                </div>
+              </div>
+              <div class="row mb-4">
+                <div class="col-12">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-control form-control-lg" id="message" rows="4" placeholder="Your Message"></textarea>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg w-100">Submit</button>
+            </form>
+          </div>
+          
+      </div>
+    </div>
+  </div>
+  </section>
+  <section class="client-logo-section py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Clients</h2>
+      <div class="logo-slider">
+        <div class="logo-track">
+          <!-- Client logos -->
+          <div class="logo">
+            <img src="https://www.authenticdesigners.net/Content/Manage/logoImage/40963Crystal_Agro_chemicas___Fertilizers.gif" alt="Client 1">
+          </div>
+          <div class="logo">
+            <img src="https://www.authenticdesigners.net/Content/Manage/logoImage/207773NTL.png" alt="Client 2">
+          </div>
+          <div class="logo">
+            <img src="https://www.authenticdesigners.net/Content/Manage/logoImage/220166Ds_grop.jpg" alt="Client 3">
+          </div>
+          <div class="logo">
+            <img src="https://www.authenticdesigners.net/Content/Manage/logoImage/241942Akums_Drugs___Pharmaceutical_ltd.png" alt="Client 4">
+          </div>
+          <div class="logo">
+            <img src="https://www.authenticdesigners.net/Content/Manage/logoImage/151225darrick_insecticides.jpg" alt="Client 5">
+          </div>
+          <div class="logo">
+            <img src="https://www.authenticdesigners.net/Content/Manage/logoImage/207545Freshka.jpg" alt="Client 6">
+          </div>
+  
+          <!-- Repeat logos for seamless scrolling -->
+          <div class="logo">
+            <img src="https://www.authenticdesigners.net/Content/Manage/logoImage/40963Crystal_Agro_chemicas___Fertilizers.gif" alt="Client 1">
+          </div>
+          <div class="logo">
+            <img src="https://www.authenticdesigners.net/Content/Manage/logoImage/207773NTL.png" alt="Client 2">
+          </div>
+          <div class="logo">
+            <img src="https://www.authenticdesigners.net/Content/Manage/logoImage/220166Ds_grop.jpg" alt="Client 3">
+          </div>
+          <div class="logo">
+            <img src="https://www.authenticdesigners.net/Content/Manage/logoImage/241942Akums_Drugs___Pharmaceutical_ltd.png" alt="Client 4">
+          </div>
+          <div class="logo">
+            <img src="https://www.authenticdesigners.net/Content/Manage/logoImage/151225darrick_insecticides.jpg" alt="Client 5">
+          </div>
+          <div class="logo">
+            <img src="https://www.authenticdesigners.net/Content/Manage/logoImage/207545Freshka.jpg" alt="Client 6">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-us-section py-5" id="about">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left Image -->
+        <div class="col-lg-6 col-md-12 about-image">
+          <img src="images/about-us.jpg" alt="About Us" class="img-fluid rounded shadow-lg">
+        </div>
+        <!-- Right Information -->
+        <div class="col-lg-6 col-md-12 about-info">
+          <h2 class="mb-4">Who We Are</h2>
+          <p class="mb-3">
+            We are a team of passionate professionals dedicated to delivering innovative solutions to meet our clients' needs. Our journey has been fueled by creativity, collaboration, and an unwavering commitment to excellence.
+          </p>
+          <p class="mb-3">
+            With years of experience in the industry, we specialize in providing top-notch services tailored to help businesses thrive in a dynamic world.
+          </p>
+          <a href="#contact" class="btn btn-primary ">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="product-section" id="services">
+    <div class="container">
+      <h2 class="section-title text-center mb-4">Our Products</h2>
+      <div class="row">
+        <!-- Product 1 -->
+        <div class="col-md-4">
+          <div class="product-card-custom">
+            <div class="product-image-custom">
+              <img src="images/product1.png" alt="Product 1">
+              <div class="image-overlay">
+               
+              </div>
+            </div>
+            <div class="product-content-custom">
+              <div class="content-overlay"></div>
+              <h3>Product One</h3>
+              <p> Discover the unique features of Product One. Perfect for your needs. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias at, laudantium dolorem eum, velit itaque possimus corrupti impedit eveniet repellat ratione explicabo, sunt nesciunt. Odio nemo minima cupiditate repellendus rerum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, animi vel ab temporibus dolor odit consequuntur impedit adipisci quos unde ex eius nihil est debitis! Natus ratione tempore ullam iste!</p>
+              <button class="btn btn-primary-custom">Learn More</button>
+            </div>
+          </div>
+        </div>
+        <!-- Product 2 -->
+        <div class="col-md-4">
+          <div class="product-card-custom">
+            <div class="product-image-custom">
+              <img src="images/product2.png" alt="Product 2">
+              <div class="image-overlay">
+                
+              </div>
+            </div>
+            <div class="product-content-custom">
+              <div class="content-overlay"></div>
+              <h3>Product Two</h3>
+              <p>Explore the amazing design and features of Product Two today! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, quisquam debitis rerum sapiente facilis natus mollitia illum quis deleniti molestias qui consequuntur voluptas harum, autem sint doloribus officiis. Quos, aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit tempore deserunt commodi vero esse dolorem enim nam delectus earum quisquam quia aliquid culpa quod perspiciatis.</p>
+              <button class="btn btn-primary-custom">Learn More</button>
+            </div>
+          </div>
+        </div>
+        <!-- Product 3 -->
+        <div class="col-md-4">
+          <div class="product-card-custom">
+            <div class="product-image-custom">
+              <img src="images/product3.png" alt="Product 3">
+              <div class="image-overlay">
+                
+              </div>
+            </div>
+            <div class="product-content-custom">
+              <div class="content-overlay"></div>
+              <h3>Product Three</h3>
+              <p>Product Three is here to exceed all your expectations. Try it now. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dignissimos quasi odio fugit quas! Voluptatibus neque ad explicabo, quia sapiente ullam quae libero, molestias ipsum consectetur fugit necessitatibus, accusamus totam!</p>
+              <button class="btn btn-primary">Learn More</button>
+             
+            </div>
+          </div>
+        </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+            <!-- Product 1 -->
+            <div class="col-md-4">
+              <div class="product-card-custom">
+                <div class="product-image-custom">
+                  <img src="images/product1.png" alt="Product 1">
+                  <div class="image-overlay">
+                    
+                  </div>
+                </div>
+                <div class="product-content-custom">
+                  <div class="content-overlay"></div>
+                  <h3>Product One</h3>
+                  <p>Discover the unique features of Product One. Perfect for your needs. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias at, laudantium dolorem eum, velit itaque possimus corrupti impedit eveniet repellat ratione explicabo, sunt nesciunt. Odio nemo minima cupiditate repellendus rerum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, animi vel ab temporibus dolor odit consequuntur impedit adipisci quos unde ex eius nihil est debitis! Natus ratione tempore ullam iste!</p>
+                  <button class="btn btn-primary">Learn More</button>
+                </div>
+              </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="col-md-4">
+              <div class="product-card-custom">
+                <div class="product-image-custom">
+                  <img src="images/product2.png" alt="Product 2">
+                  <div class="image-overlay">
+                   
+                  </div>
+                </div>
+                <div class="product-content-custom">
+                  <div class="content-overlay"></div>
+                  <h3>Product Two</h3>
+                  <p>Explore the amazing design and features of Product Two today! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, quisquam debitis rerum sapiente facilis natus mollitia illum quis deleniti molestias qui consequuntur voluptas harum, autem sint doloribus officiis. Quos, aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit tempore deserunt commodi vero esse dolorem enim nam delectus earum quisquam quia aliquid culpa quod perspiciatis.</p>
+                  <button class="btn btn-primary-custom">Learn More</button>
+                </div>
+              </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="col-md-4">
+              <div class="product-card-custom">
+                <div class="product-image-custom">
+                  <img src="images/product3.png" alt="Product 3">
+                  <div class="image-overlay">
+                    
+                  </div>
+                </div>
+                <div class="product-content-custom">
+                  <div class="content-overlay"></div>
+                  <h3>Product Three</h3>
+                  <p>Product Three is here to exceed all your expectations. Try it now. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dignissimos quasi odio fugit quas! Voluptatibus neque ad explicabo, quia sapiente ullam quae libero, molestias ipsum consectetur fugit necessitatibus, accusamus totam!</p>
+                  <button class="btn btn-primary-custom">Learn More</button>
+                </div>
+              </div>
+      </div>
+    </div>
+  </section>
+  <section class="testimonial-section py-5">
+    <div class="container">
+      <h2 class="section-title text-center">What Our Clients Say</h2>
+      <div class="custom-testimonial-slider">
+        <div class="custom-testimonial-wrapper">
+          <!-- Testimonial Card 1 -->
+          <div class="custom-testimonial-card">
+            <div class="custom-testimonial-author">
+              <img src="data:image/jpeg;base64,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" alt="Client 1" class="custom-author-image">
+              <h5>Ravi Kumar</h5>
+              <p>Founder, Tech Innovators</p>
+            </div>
+            <p>"The experience with this company was amazing. Their team is professional and their services are top-notch!"</p>
+          </div>
+          <!-- Testimonial Card 2 -->
+          <div class="custom-testimonial-card">
+            <div class="custom-testimonial-author">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSANFxAmMMsqy9eb77eQpjZc8aqMZwF63exvg&s" alt="Client 2" class="custom-author-image">
+              <h5>Priya Sharma</h5>
+              <p>CEO, Innovations Pvt Ltd</p>
+            </div>
+            <p>"Working with them was an absolute pleasure. Their dedication and attention to detail set them apart!"</p>
+          </div>
+          <!-- Testimonial Card 3 -->
+          <div class="custom-testimonial-card">
+            <div class="custom-testimonial-author">
+              <img src="data:image/jpeg;base64,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" alt="Client 3" class="custom-author-image">
+              <h5>Rahul Desai</h5>
+              <p>Marketing Head, Bright Future Co.</p>
+            </div>
+            <p>"A great team! The results speak for themselves. We highly recommend their services!"</p>
+          </div>
+          <!-- Testimonial Card 4 -->
+          <div class="custom-testimonial-card">
+            <div class="custom-testimonial-author">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrHmdbrEzxc-w_Wgoj_QZjRQj-gnuUi5xDYw&s" alt="Client 4" class="custom-author-image">
+              <h5>Sanya Gupta</h5>
+              <p>Managing Director, Gupta Enterprises</p>
+            </div>
+            <p>"Fantastic experience! The team delivered exceptional service and exceeded our expectations."</p>
+          </div>
+          <!-- Testimonial Card 5 -->
+          <div class="custom-testimonial-card">
+            <div class="custom-testimonial-author">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8KMqQ_ExVW9_zV9zDSK3_LwUDM9_1bS9Nmg&s" alt="Client 5" class="custom-author-image">
+              <h5>Amit Sharma</h5>
+              <p>Founder, Digital Solutions India</p>
+            </div>
+            <p>"Their professionalism and attention to detail were impressive. We couldn't have asked for a better team!"</p>
+          </div>
+        </div>
+         <!-- Previous and Next Buttons -->
+<button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+<span class="carousel-control-next-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Next</span>
+</button>
+      </div>
+    </div>
+     
+  </section>
+<!-- 
+  Our Achievements -->
+  <section class="counter-section py-5">
+    <div class="container">
+      <h2 class="section-title text-center">Our Achievements</h2>
+      <div class="row">
+        <!-- Counter 1 -->
+        <div class="col-lg-3 col-md-6 col-sm-6 col-12 counter-card">
+          <div class="counter-box">
+            <div class="counter-background"></div>
+            <div class="counter-content">
+              <div class="counter-icon-box">
+                <i class="fas fa-briefcase"></i>
+              </div>
+              <h3 class="counter-number">
+                <span class="counter-value" data-count="500">0</span><span class="counter-icon">+</span>
+              </h3>
+              <p>Projects Completed</p>
+            </div>
+          </div>
+        </div>
+        <!-- Counter 2 -->
+        <div class="col-lg-3 col-md-6 col-sm-6 col-12 counter-card">
+          <div class="counter-box">
+            <div class="counter-background"></div>
+            <div class="counter-content">
+              <div class="counter-icon-box">
+                <i class="fas fa-users"></i>
+              </div>
+              <h3 class="counter-number">
+                <span class="counter-value" data-count="1200">0</span><span class="counter-icon">+</span>
+              </h3>
+              <p>Happy Clients</p>
+            </div>
+          </div>
+        </div>
+        <!-- Counter 3 -->
+        <div class="col-lg-3 col-md-6 col-sm-6 col-12 counter-card">
+          <div class="counter-box">
+            <div class="counter-background"></div>
+            <div class="counter-content">
+              <div class="counter-icon-box">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+              <h3 class="counter-number">
+                <span class="counter-value" data-count="850">0</span><span class="counter-icon">+</span>
+              </h3>
+              <p>Products Sold</p>
+            </div>
+          </div>
+        </div>
+        <!-- Counter 4 -->
+        <div class="col-lg-3 col-md-6 col-sm-6 col-12 counter-card">
+          <div class="counter-box">
+            <div class="counter-background"></div>
+            <div class="counter-content">
+              <div class="counter-icon-box">
+                <i class="fas fa-trophy"></i>
+              </div>
+              <h3 class="counter-number">
+                <span class="counter-value" data-count="300">0</span><span class="counter-icon">+</span>
+              </h3>
+              <p>Awards Won</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <section class="faq-contact-section">
+    <div class="container">
+      <div class="row">
+        <!-- FAQ Section -->
+        <div class="col-md-6">
+          <h2 class="section-title mb-4">Frequently Asked Questions</h2>
+          <div class="faq">
+            <div class="faq-item">
+              <h3 class="faq-question">
+                What is Product One? 
+                <button class="toggle-faq" onclick="toggleFaq(this)">+</button>
+              </h3>
+              <div class="faq-answer" style="display: none;">
+                <p>Product One is an innovative solution designed to meet your unique needs. Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis hic, similique corrupti reprehenderit ad a ut libero repellendus ipsam, optio dolorem officiis accusamus fuga odio velit dolor eius debitis? Quas.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <h3 class="faq-question">
+                How do I purchase Product Two? 
+                <button class="toggle-faq" onclick="toggleFaq(this)">+</button>
+              </h3>
+              <div class="faq-answer" style="display: none;">
+                <p>You can purchase Product Two by visiting our online store or contacting us directly. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, sit delectus sint quo aut vel maxime optio ipsa consequuntur nihil veniam quia tempore sunt saepe voluptate et. Atque, fugit. Dolores!</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <h3 class="faq-question">
+                Is Product Three customizable? 
+                <button class="toggle-faq" onclick="toggleFaq(this)">+</button>
+              </h3>
+              <div class="faq-answer" style="display: none;">
+                <p>Yes, Product Three can be customized according to your requirements. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa sed dolores voluptatem nam, ut unde corrupti omnis illum ex. Ullam molestias placeat maxime error vero odit, laudantium qui corrupti modi.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Contact Form Section -->
+        <div class="col-md-6" id="faq">
+          <h2 class="section-title mb-4 text-center">Get in Touch</h2>
+          <div class="contact-form animated-form">
+            <form>
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Your Number</label>
+                <input type="phone" id="phone" class="form-control" placeholder="Enter your Number" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" class="form-control" rows="3" placeholder="Enter your message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+<footer class="footer-section">
+  <div class="footer-bubble-background">
+    <!-- Bubbles -->
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <!-- Logo and About -->
+      <div class="col-md-4">
+        <div class="footer-logo">
+          <img src="images/logo.png" alt="Company Logo">
+        </div>
+        <p class="footer-about">
+          Our company delivers high-quality products designed to make your life better. Join us in redefining excellence. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores pariatur perspiciatis accusantium qui sequi, sunt maiores facilis rem dolor harum at incidunt ut, reprehenderit tempore quae modi iste saepe nulla.
+        </p>
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="col-md-2">
+        <h4>Quick Links</h4>
+        <ul class="footer-nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Products</a></li>
+         <li><a href="#faq">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Address and Contact -->
+      <div class="col-md-3">
+        <h4>Contact Us</h4>
+        <p><strong><i class="fas fa-map-marker-alt"></i></strong> 123 Main Street, New Delhi, India</p>
+        <p><strong> <i class="fas fa-envelope"></i></strong> info@example.com</p>
+        <p><strong> <i class="fas fa-phone"></i></strong>  +91 9876543210</p>
+      </div>
+
+      <!-- Social Media and CTA -->
+      <div class="col-md-3">
+        <h4>Follow Us</h4>
+        <div class="footer-social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <br>
+
+        <button class="btn btn-primary">Subscribe Now</button>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Your Company. All Rights Reserved.</p>
+    </div>
+  </div>
+  <div class="whatsapp-button">
+    <a href="https://wa.me/918726685094" target="_blank">
+      <img src="images/whatsAppIcon.png" alt="WhatsApp" />
+    </a>
+  </div>
+  <div class="telephone-button">
+    <a href="https://call.me/918726685094" target="_blank">
+      <img src="images/telephone_724664.png" alt="Telephone" />
+    </a>
+  </div>
+</footer>
+  
+  
+  
+  
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="scripts.js"></script>
+</body>
+</html>
+    
