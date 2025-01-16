@@ -14,48 +14,47 @@
 </head>
 <body>
     <section>
-    <nav class="navbar navbar-expand-lg bg-light navbar-light animated-navbar">
-        <div class="container-fluid">
-          <!-- Logo -->
-          <a class="navbar-brand" href="#">
-            <img src="images/logo.png" alt="Logo" width="120" height="70" style="margin-left: 70px;">
-          </a>
-          <!-- Toggler for Mobile View -->
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <!-- Navbar Content -->
-          <div class="collapse navbar-collapse justify-content-end w-100" id="navbarNav">
-            <!-- Nav Links -->
-            <ul class="navbar-nav align-items-center me-3" style="color: black;">
-              <li class="nav-item">
-                <a class="nav-link active" href="#home">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#services">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#faq">Contact</a>
-              </li>
-            </ul>
-            <!-- CTA Button -->
-            <a href="#faq" class="btn btn-primary">Get Started</a>
-          </div>
-        </div>
-      </nav>
-      </section>
-      
+  <nav class="navbar navbar-expand-lg bg-light navbar-light animated-navbar">
+    <div class="container-fluid">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="images/logo.png" alt="Logo" class="responsive-logo">
+      </a>
+      <!-- Toggler for Mobile View -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Navbar Content -->
+      <div class="collapse navbar-collapse justify-content-end w-100" id="navbarNav">
+        <!-- Nav Links -->
+        <ul class="navbar-nav align-items-center me-3" style="color: black;">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#faq">Contact</a>
+          </li>
+        </ul>
+        <!-- CTA Button -->
+        <a href="#faq" class="btn btn-primary cta-button">Get Started</a>
+      </div>
+    </div>
+  </nav>
+</section>
       
       <section>
   <!-- Hero Slider -->
@@ -142,6 +141,10 @@
           </div>
           
       </div>
+      <div class="float-text show-on-scroll show" style="background-size: cover; background-repeat: no-repeat;">
+        <span><a href="#">Scroll to top</a></span>
+    </div>
+    <div class="scrollbar-v show-on-scroll show" style="background-size: cover; background-repeat: no-repeat; height: 83.6351px;"></div>
     </div>
 
     <!-- Slide 3 -->
@@ -243,6 +246,7 @@
         <div class="col-lg-6 col-md-12 about-image">
           <img src="images/about-us.jpg" alt="About Us" class="img-fluid rounded shadow-lg">
         </div>
+        
         <!-- Right Information -->
         <div class="col-lg-6 col-md-12 about-info">
           <h2 class="mb-4">Who We Are</h2>
