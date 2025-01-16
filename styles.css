@@ -10,6 +10,25 @@
  
     color: #ff5733; 
   }
+
+  .responsive-logo {
+    width: 120px;
+    height: 70px;
+    margin-left: 70px;
+  }
+
+ 
+  @media (max-width: 768px) {
+    .responsive-logo {
+      width: 100px;
+      height: auto; 
+      margin-left: 7px;
+    }
+
+    .cta-button {
+      display: none;
+    }
+  }
   
   
 .animated-navbar {
@@ -27,26 +46,43 @@
     }
   }
   
+  .show-on-scroll.show {
+    opacity: 1;
+}
+.scrollbar-v {
+  background: var(--primary-color);
+  position: fixed;
+  top: calc(50% + 60px);
+  left: 43px;
+  width: 2px;
+  transition: all linear 0.1s;
+    min-height: 0%;
+    z-index: 1000;
+}
+
+
   /* Hero Slider */
   .hero-slider {
     position: relative;
     width: 100%;
     height: 742px;
     overflow: hidden;
-  }
-  
-  .slide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    opacity: 0;
-    transform: translateY(10px);
-    animation: slideAnimation 18s infinite;
-  }
+    opacity: 1;
+    /* Fallback background to avoid white */
+}
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: slideAnimation 18s infinite;
+  background-color: #00000002; /* Add a default background color */
+}
   
   .slide:nth-child(1) {
     animation-delay: 0s;
@@ -61,15 +97,15 @@
   }
   
   @keyframes slideAnimation {
-    0%, 25% {
-      opacity: 1;
-      transform: translateY(0);
+    0%, 20% {
+        opacity: 0;
+        transform: translateY(20px);
     }
-    33%, 100% {
-      opacity: 0;
-      transform: translateY(20px);
+    25%, 100% {
+        opacity: 1;
+        transform: translateY(40px);
     }
-  }
+}
   
   
   /* Adjust the layout for contact form and content */
@@ -81,13 +117,13 @@
   }
   
   .text-md-start {
-    margin-right: auto; /* Ensure content stays on the left */
+    margin-right: auto; 
     text-align: left;
-    /* Makes text more readable on dark backgrounds */
+    
   }
   
   .contact-form {
-    margin-left: auto; /* Ensures the form stays on the right */
+    margin-left: auto;
     max-width: 700px;
     margin-top: 50px; 
     background-color: rgb(2, 29, 136);
@@ -124,9 +160,9 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 0 5%;
+    padding: 35px 5%;
     position: relative;
-    z-index: 2; /* Ensure content is above the overlay */
+    z-index: 2; 
   }
   
   .contact-form {
@@ -184,22 +220,25 @@
     margin-bottom: 25px;
     text-align: center; /* Center the heading */
   }
+ 
+    
+  
 /* Ensures form stays below content on smaller screens */
 @media (max-width: 768px) {
     .contact-form {
-      width: 80%; 
+      width: 100%; 
       max-width: 400px; 
       margin: 25px auto; 
       padding: 20px;
       background-color: rgba(255, 255, 255, 0.95);
       border-radius: 8px; 
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for a cleaner look */
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
     }
   
     .slide-content {
-      flex-direction: column; /* Stack the content and form vertically */
-      align-items: left; /* Center align for better layout */
-      text-align: left; /* Center the text for smaller screens */
+      flex-direction: column; 
+      align-items: left; 
+      text-align: left; 
     }
   
     .text-md-start {
@@ -228,29 +267,29 @@
     }
     .contact-form .row {
     display: flex;
-    flex-direction: column; /* Stack fields vertically by default */
-    gap: 10px; /* Add spacing between rows */
+    flex-direction: column; 
+    gap: 10px; 
   }
 
   /* Specific arrangement for Name in its own row */
   .contact-form .row:nth-child(1) {
-    flex-direction: row; /* Name takes full width in its own row */
+    flex-direction: row; 
   }
 
   /* Number and Email side by side */
   .contact-form .row:nth-child(2) {
-    flex-direction: row; /* Align email and phone horizontally */
-    gap: 10px; /* Add space between email and phone */
+    flex-direction: row; 
+    gap: 10px; 
   }
 
   /* Ensure Number and Email split space evenly */
   .contact-form .row:nth-child(2) .col-md-6 {
-    flex: 1; /* Make both fields equal in width */
+    flex: 1; 
   }
 
   /* Message in its own row */
   .contact-form .row:nth-child(3) {
-    flex-direction: row; /* Message takes full width in its own row */
+    flex-direction: row; 
   }
 
   }
@@ -387,6 +426,7 @@
   @media (max-width: 768px) {
     .about-us-section {
       text-align: center;
+      
     }
   
     .about-image, .about-info {
@@ -399,6 +439,8 @@
   
     .about-info h2 {
       font-size: 2rem;
+      margin-top: 41px;
+      
     }
   
     .about-info p {
@@ -696,7 +738,7 @@
 
 @media (max-width: 768px) {
   .custom-testimonial-card {
-    flex: 0 0 85.5%; /* Full width for each card on smaller screens */
+    flex: 0 0 92%;
   }
 }
 
